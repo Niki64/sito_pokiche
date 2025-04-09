@@ -146,7 +146,7 @@ export function Navbar() {
                   <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="bg-[#000080] text-white w-[300px] p-6">
+              <SheetContent side="right" className="bg-[#01295a] text-white w-[300px] p-6">
                 <div className="flex flex-col space-y-4 mt-8">
                   <MobileLink href="/">HOME</MobileLink>
                   <MobileLink href="#menu">I NOSTRI POKE</MobileLink>

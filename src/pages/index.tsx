@@ -8,6 +8,7 @@ import { CreateYourPoke } from "@/components/sections/CreateYourPoke";
 import { Panini } from "@/components/sections/Panini";
 import { Ceviche } from "@/components/sections/Ceviche";
 import { Location } from "@/components/sections/Location";
+import { Privacy } from "@/components/sections/Privacy";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
         <Panini />
         <Ceviche />
         <Location />
+        <Privacy />
       </main>
     </>
   );

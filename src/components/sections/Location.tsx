@@ -19,7 +19,7 @@ export function Location() {
                     <MapPin className="w-6 h-6 text-[#1C2331] mt-1" />
                     <div>
                       <h3 className="font-bold text-xl mb-2">Indirizzo</h3>
-                      <p className="text-lg font-serif">
+                      <p className="text-sm font-sans-serif">
                         Via Sigieri, 10<br />
                         20135 Milano
                       </p>
@@ -30,7 +30,7 @@ export function Location() {
                     <Clock className="w-6 h-6 text-[#1C2331] mt-1" />
                     <div>
                       <h3 className="font-bold text-xl mb-2">Orari</h3>
-                      <p className="text-lg font-serif">
+                      <p className="text-sm font-sans-serif">
                         Lunedì - Sabato: 11:30-15,00/18,00-22,00<br />
                         Domenica: chiuso
                       </p>
@@ -41,9 +41,9 @@ export function Location() {
                     <Phone className="w-6 h-6 text-[#1C2331] mt-1" />
                     <div>
                       <h3 className="font-bold text-xl mb-2">Contatti</h3>
-                      <p className="text-lg font-serif">
+                      <p className="text-sm font-sans-serif">
                         Tel: (+39) 328 7053652<br />
-                        Email: info@pokiche.it
+                        email: info@pokiche.it
                       </p>
                     </div>
                   </div>
