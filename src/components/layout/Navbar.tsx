@@ -101,7 +101,7 @@ export function Navbar() {
           </Link>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button className="bg-[#FF9F1C] text-white hover:bg-[#01295a] whitespace-nowrap">
+              <Button className="bg-[#FF9F1C] text-white hover:bg-[#01295a] whitespace-nowrap text-base" size="default">
                 DELIVERY
               </Button>
             </DropdownMenuTrigger>
@@ -158,7 +158,7 @@ export function Navbar() {
                   <div className="flex justify-center">
                     <DropdownMenu>
                       <DropdownMenuTrigger asChild>
-                        <Button className="bg-[#FF9F1C] text-white hover:bg-[#FF8C00] w-full">
+                        <Button className="bg-[#FF9F1C] text-white hover:bg-[#FF8C00] w-full text-lg">
                           DELIVERY
                         </Button>
                       </DropdownMenuTrigger>
