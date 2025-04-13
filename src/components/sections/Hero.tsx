@@ -39,7 +39,7 @@ export function Hero() {
               </Button>
             </Link>
           </div>
-          <div className="flex justify-center mt-24
+          <div className="flex justify-center mt-12
            sm:mt-0 sm:absolute sm:right-0 sm:top-[140%] w-full sm:w-auto">
             <div className="flex flex-col items-center">
               <div className="transform -rotate-[0deg]">
