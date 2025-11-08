@@ -22,7 +22,7 @@ export function Privacy() {
       <Button 
         variant="link" 
         onClick={() => setIsOpen(true)}
-        className="text-lg text-white hover:text-gray-400"
+        className="text-2xl text-orange-400 hover:text-gray-400"
       >
         Privacy
       </Button>

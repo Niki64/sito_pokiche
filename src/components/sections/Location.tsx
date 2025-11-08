@@ -42,7 +42,11 @@ export function Location() {
                     <div>
                       <h3 className="font-bold text-xl mb-2">Contatti</h3>
                       <p className="text-sm font-sans-serif">
-                        Tel: (+39) 328 7053652<br />
+                          <a href="tel:+393287053652"
+                             className="text-[#1C2331] hover:text-blue-600 hover:underline transition-colors duration-200 font-medium">
+                              Tel: (+39) 328 7053652
+                          </a>
+                          <br />
                         email: info@pokiche.it
                       </p>
                     </div>
