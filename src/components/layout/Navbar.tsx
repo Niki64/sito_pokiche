@@ -124,7 +124,6 @@ export function Navbar() {
                         {t('nav.contacts')}
                     </Link>
 
-
                     <DropdownMenu>
                         <DropdownMenuTrigger asChild>
                             <Button className="bg-[#FF9F1C] text-white hover:bg-[#01295a] whitespace-nowrap text-base" size="default">
@@ -148,8 +147,18 @@ export function Navbar() {
 
                 {/* Menu mobile - visibile solo su mobile/tablet */}
                 <div className="md:hidden flex items-center justify-between w-full">
-                    {/* Logo centrato per mobile */}
-                    <div className="flex-1"></div>
+                    {/* Bandierina italiana a sinistra */}
+                    <div className="flex-1 flex justify-end pr-3">
+                        <button
+                            onClick={() => changeLanguage('it')}
+                            className={`text-2xl hover:scale-110 transition-transform ${i18n.language === 'it' ? 'opacity-100' : 'opacity-50'}`}
+                            aria-label="Italiano"
+                        >
+                            🇮🇹
+                        </button>
+                    </div>
+
+                    {/* Logo centrato */}
                     <div className="flex justify-center items-center flex-1">
                         <div className="relative w-40 h-16">
                             <Link href="/">
@@ -164,8 +173,16 @@ export function Navbar() {
                             </Link>
                         </div>
                     </div>
-                    {/* Pulsante menu hamburger */}
-                    <div className="flex justify-end flex-1">
+
+                    {/* Bandierina inglese e menu hamburger a destra */}
+                    <div className="flex-1 flex justify-end items-center gap-8">
+                        <button
+                            onClick={() => changeLanguage('en')}
+                            className={`text-2xl hover:scale-110 transition-transform ${i18n.language === 'en' ? 'opacity-100' : 'opacity-50'}`}
+                            aria-label="English"
+                        >
+                            🇬🇧
+                        </button>
                         <Sheet open={isOpen} onOpenChange={setIsOpen}>
                             <SheetTrigger asChild>
                                 <Button variant="ghost" size="icon" className="text-white">
@@ -181,24 +198,6 @@ export function Navbar() {
                                     <MobileLink href="#ceviche">{t('nav.ceviche')}</MobileLink>
                                     <MobileLink href="#contact">{t('nav.whereWeAre')}</MobileLink>
                                     <MobileLink href="#contact">{t('nav.contacts')}</MobileLink>
-
-                                    {/* Bandierine per cambio lingua - Mobile */}
-                                    <div className="flex items-center justify-center space-x-4 py-4">
-                                        <button
-                                            onClick={() => changeLanguage('it')}
-                                            className={`text-3xl hover:scale-110 transition-transform ${i18n.language === 'it' ? 'opacity-100' : 'opacity-50'}`}
-                                            aria-label="Italiano"
-                                        >
-                                            🇮🇹
-                                        </button>
-                                        <button
-                                            onClick={() => changeLanguage('en')}
-                                            className={`text-3xl hover:scale-110 transition-transform ${i18n.language === 'en' ? 'opacity-100' : 'opacity-50'}`}
-                                            aria-label="English"
-                                        >
-                                            🇬🇧
-                                        </button>
-                                    </div>
 
                                     <div className="flex justify-center">
                                         <DropdownMenu>
@@ -227,6 +226,6 @@ export function Navbar() {
                     </div>
                 </div>
             </div>
-        </nav>
-    );
+</nav>
+);
 }
